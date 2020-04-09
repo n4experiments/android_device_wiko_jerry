@@ -19,6 +19,7 @@ LOCAL_PATH := device/wiko/jerry
 TARGET_BOARD_PLATFORM := mt6580
 TARGET_BOOTLOADER_BOARD_NAME := wiko
 TARGET_ARCH := arm
+TARGET_CPU_ABI := armeabi-v7a
 
 # Recovery
 TARGET_USERIMAGES_USE_EXT4 := true
