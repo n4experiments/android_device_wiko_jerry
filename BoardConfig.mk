@@ -29,6 +29,11 @@ TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-androidkernel-
 TARGET_KERNEL_CONFIG := v2800_defconfig
 TARGET_KERNEL_SOURCE := kernel/wiko/jerry
 
+# Boot packing
+BOARD_KERNEL_BASE := 0x80000000
+BOARD_KERNEL_PAGESIZE := 2048
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x04000000 --tags_offset 0x0e000000
+
 # Recovery
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 8486188
@@ -42,6 +47,5 @@ BOARD_SUPPRESS_EMMC_WIPE := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_INCLUDE_CRYPTO := true
 
-include $(LOCAL_PATH)/kernel.mk
 include device/generic/twrpbuilder/BoardConfig32.mk
 
