@@ -28,7 +28,7 @@ TARGET_CPU_ABI := armeabi-v7a
 TARGET_KERNEL_HEADER_ARCH := arm
 TARGET_KERNEL_ARCH := arm
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-linux-androideabi-4.9/bin
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androidkernel-
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 TARGET_KERNEL_CONFIG := v2800_defconfig
 TARGET_KERNEL_SOURCE := kernel/wiko/jerry
 
