@@ -1,5 +1,7 @@
 #
-# Copyright (C) 2020 Vaisakh Murali
+# Copyright (C) 2020 Vaisakh Murali (mvaisakh)
+# Copyright (C) 2020 Maik Stratemeyer (kiam001)
+# Copyright (C) 2020 Luka Panio (luka177)
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
