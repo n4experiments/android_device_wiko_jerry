@@ -22,8 +22,8 @@ TARGET_ARCH := arm
 TARGET_CPU_ABI := armeabi-v7a
 
 # Kernel
-TARGET_KERNEL_HEADER_ARCH := arm32
-TARGET_KERNEL_ARCH := arm32
+TARGET_KERNEL_HEADER_ARCH := arm
+TARGET_KERNEL_ARCH := arm
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-androidkernel-
 TARGET_KERNEL_CONFIG := v2800_defconfig
