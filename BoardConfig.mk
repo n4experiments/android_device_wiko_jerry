@@ -58,6 +58,9 @@ TW_USE_TOOLBOX := true
 TW_NO_EXFAT := true
 TW_EXCLUDE_TZDATA := true
 TW_EXCLUDE_NANO := true
+TW_THEME := portrait_mdpi
+TW_EXCLUDE_ENCRYPTED_BACKUPS := true
+TW_EXTRA_LANGUAGES := false
 
 include device/generic/twrpbuilder/BoardConfig32.mk
 
