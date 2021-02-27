@@ -65,7 +65,3 @@ TW_EXCLUDE_ENCRYPTED_BACKUPS := true
 TW_EXTRA_LANGUAGES := false
 
 include device/generic/twrpbuilder/BoardConfig32.mk
-
-
-# HACK: TO REMOVE LATER
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 18486188
