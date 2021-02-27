@@ -33,8 +33,7 @@ KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-li
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 TARGET_KERNEL_CONFIG := v2800_defconfig
 TARGET_KERNEL_SOURCE := kernel/wiko/jerry
-
-BOARD_RAMDISK_USE_XZ := true
+LZMA_RAMDISK_TARGETS := recovery
 
 # Boot packing
 BOARD_KERNEL_BASE := 0x80000000
