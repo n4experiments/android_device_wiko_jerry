@@ -32,7 +32,7 @@ TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 TARGET_KERNEL_CONFIG := v2800_defconfig
 TARGET_KERNEL_SOURCE := kernel/wiko/jerry
 
-LZMA_RAMDISK_TARGETS := recovery
+BOARD_RAMDISK_USE_XZ := true
 
 # Boot packing
 BOARD_KERNEL_BASE := 0x80000000
@@ -50,8 +50,11 @@ BOARD_RECOVERY_SWIPE := true
 BOARD_USES_MMCUTILS := true
 BOARD_SUPPRESS_EMMC_WIPE := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
-TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_CRYPTO := false
 TW_EXCLUDE_TWRPAPP := true
+BOARD_HAS_NO_REAL_SDCARD := true
+TW_USE_TOOLBOX := true
+TW_NO_EXFAT := true
 
 include device/generic/twrpbuilder/BoardConfig32.mk
 
