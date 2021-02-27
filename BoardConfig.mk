@@ -56,6 +56,8 @@ TW_INCLUDE_SUPERSU := false
 TW_EXCLUDE_TWRPAPP := true
 TW_USE_TOOLBOX := true
 TW_NO_EXFAT := true
+TW_EXCLUDE_TZDATA := true
+TW_EXCLUDE_NANO := true
 
 include device/generic/twrpbuilder/BoardConfig32.mk
 
