@@ -34,6 +34,8 @@ TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 TARGET_KERNEL_CONFIG := v2800_defconfig
 TARGET_KERNEL_SOURCE := kernel/wiko/jerry
 LZMA_RAMDISK_TARGETS := recovery
+BOARD_NEEDS_LZMA_MINIGZIP := true
+TW_NO_USB_STORAGE := true
 
 # Boot packing
 BOARD_KERNEL_BASE := 0x80000000
